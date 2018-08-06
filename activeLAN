@@ -1,0 +1,2 @@
+#!/bin/bash
+nmap -sn 192.168.1.* --open | grep -v '^Host is' | cut -d " " -f 5,6
